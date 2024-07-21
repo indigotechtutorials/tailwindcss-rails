@@ -8,6 +8,7 @@ module Tailwindcss
       source_root File.expand_path("templates", __dir__)
 
       def create_session_files
+        puts "😀 Logging from TailwindCSS forked gem"
         template "models/session.rb", File.join("app/models/session.rb")
         template "models/user.rb", File.join("app/models/user.rb")
         template "models/current.rb", File.join("app/models/current.rb")
