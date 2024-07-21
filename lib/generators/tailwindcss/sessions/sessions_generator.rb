@@ -6,7 +6,6 @@ module Tailwindcss
       include Rails::Generators::ResourceHelpers
       
       source_root File.expand_path("templates", __dir__)
-      source_paths << "lib/templates/erb/sessions"
 
       def create_session_files
         template "models/session.rb", File.join("app/models/session.rb")
